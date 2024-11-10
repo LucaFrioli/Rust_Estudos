@@ -1,0 +1,17 @@
+{
+  "name": "rust_estudos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.md'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "eslint-plugin-markdown": "^5.1.0"
+  }
+}
