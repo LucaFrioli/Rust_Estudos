@@ -1,4 +1,4 @@
-[**Voltar**](./readme.md)
+[**Voltar**](../readme.md)
 
 # Configurando a Ferramenta de Linting para Documentações
 
@@ -68,4 +68,4 @@ Após concluir a instalação das dependências e da extensão, adicione as segu
 }
 ```
 
-[**Voltar**](./readme.md)
+[**Voltar**](../readme.md)

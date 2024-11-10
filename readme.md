@@ -13,7 +13,7 @@ Este curso será voltado ao aprendizado da linguagem de baixo nível Rust.
 - Toda correção ou mudança deverá ser documentada e justificada.
 - Sinta-se a vontade para perguntar, e interagir.
 
-**Obs: Para quem quiser contribuir com documentações, segue o guia de como instalar e configurar a ferramenta de linting, para tal, [clique aqui!](./configLintingToll.md)**
+**Obs: Para quem quiser contribuir com documentações, segue o guia de como instalar e configurar a ferramenta de linting, para tal, [clique aqui!](./basic_settings_for_contributors/configLintingToll.md)**
 
 ---
 
