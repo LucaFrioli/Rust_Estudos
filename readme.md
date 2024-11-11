@@ -49,7 +49,7 @@ Caso queira simplesmente adicionar as configurações no json de seu editor bast
 Vamos abordar os seguintes módulos dentro deste curso (**Recomenda-se a ordem de estudos aqui contitadas**) :
 
 - **[Conceitos básicos de programação](./basic_programming_concepts/readme.md)**
-- **[Entendendo conceitos de prpriedades](./ownership_concepts/)**
-- **[Utilizando Structs](./structs_and_related_data/)**
+- **[Entendendo conceitos de prpriedades](#)**
+- **[Utilizando Structs](#)**
 - **...**
 
