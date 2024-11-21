@@ -89,7 +89,7 @@ Após rodar o comando `cargo build`, algumas mudanças são perceptíveis no dir
 
 - É gerado automaticamente pelo `cargo` para registrar as versões exatas de todas as dependências utilizadas.
 - Garante consistência entre builds, mesmo em máquinas ou momentos diferentes.
-- É atualizado automaticamente quando as dependências mudam e deve ser incluído no controle de versão para projetos de aplicativos.
+- É atualizado automaticamente quando as dependências mudam e deve ser incluído no controle de versão para projetos de aplicativos, porém se estiver criando uma biblioteca ele deve ser declarado no `.gitignore`.
 
 Além disso, a pasta `target` é criada para armazenar os artefatos de compilação.
 
