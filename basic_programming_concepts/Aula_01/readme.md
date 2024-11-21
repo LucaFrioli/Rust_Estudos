@@ -1,157 +1,176 @@
-# Instalando e criando o primeiro Hello World de nossa aplicação
+# Instalando e criando o primeiro "Hello World" em nossa aplicação
 
-## Instalando a linguagem
+## Sumário
 
-- [Instalação para Windows](#instalação-no-windows)
-- [Instalação para Linux e MacOs](#instalação-no-linux-e-macos)
-- [Comandos Úteis](#comandos-úteis)
-
-### Pré-requisitos
-
-- Conexão com a internet
-- Acesso ao terminal do sistema operacional
-
-### Instalação no Windows
-
-1. **Baixar o Instalador**:
-   - Acesse [https://rustup.rs](https://rustup.rs) e clique em **"Install Rust"**.
-   - Alternativamente, abra o terminal do Windows (Prompt de Comando ou PowerShell) e execute:
-     ```powershell
-     iwr -useb https://win.rustup.rs | iex
-     ```
-2. **Executar o Instalador**:
-
-   - O comando acima iniciará o instalador do Rust.
-   - Siga as instruções na tela para concluir a instalação.
-
-3. **Configurar o Path**:
-
-   - O instalador do `rustup` normalmente adiciona o caminho do Rust automaticamente ao PATH do sistema.
-   - Para verificar, feche e reabra o terminal e execute:
-     ```bash
-     rustc --version
-     ```
-   - A saída deve exibir a versão do Rust instalada.
-
-4. **Atualizar e Gerenciar Ferramentas**:
-   - Use o comando `rustup update` para manter o Rust atualizado.
+1. [Instalando a linguagem](#instalando-a-linguagem)
+   - [Pré-requisitos](#pré-requisitos)
+   - [Instalação no Windows](#instalação-no-windows)
+   - [Instalação no Linux e MacOS](#instalação-no-linux-e-macos)
+   - [Comandos úteis](#comandos-úteis)
+2. [Criando o primeiro Hello World](#criando-o-primeiro-hello-world)
+   - [Criando o projeto manualmente](#criando-o-projeto-manualmente)
+   - [Explicação do código](#explicação-do-código)
+3. [Entendendo conceito de Cargo](./hello_cargo.md)
 
 ---
 
-### Instalação no Linux e MacOs
+## Instalando a linguagem
 
-1. **Baixar e Executar o Instalador**:
+### Pré-requisitos
 
-   - No terminal, execute o comando:
-     ```bash
-     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+- Conexão com a internet.
+- Acesso ao terminal do sistema operacional.
+
+---
+
+### Instalação no Windows
+
+1. **Baixar e executar o instalador**:
+
+   - Acesse [https://rustup.rs](https://rustup.rs) e clique em **"Install Rust"**.
+   - Alternativamente, no terminal do Windows (Prompt de Comando ou PowerShell), execute:
+     ```powershell
+     iwr -useb https://win.rustup.rs | iex
      ```
-   - Isso fará o download do script de instalação e iniciará o processo.
+   - Siga as instruções do instalador.
 
-2. **Seguir as Instruções do Instalador**:
+2. **Verificar instalação**:
 
-   - Durante a instalação, o `rustup` perguntará se você deseja configurar o PATH automaticamente. Recomenda-se aceitar.
-
-3. **Verificar Instalação**:
-
-   - Após a instalação, abra um novo terminal (ou reinicie o shell) e execute:
+   - Feche e reabra o terminal e execute:
      ```bash
      rustc --version
      ```
-   - Deve exibir a versão do Rust instalada.
+   - A versão do Rust instalada será exibida.
 
-4. **Atualizar e Gerenciar Ferramentas**:
-   - Para atualizações e gerenciamento de componentes, use `rustup update`.
+3. **Manter o Rust atualizado**:
+   - Use:
+     ```bash
+     rustup update
+     ```
+
+---
+
+### Instalação no Linux e MacOS
+
+1. **Baixar e executar o instalador**:
+
+   - No terminal, execute:
+     ```bash
+     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+     ```
+   - Siga as instruções na tela.
+
+2. **Verificar instalação**:
+
+   - Após concluir, reinicie o terminal e execute:
+     ```bash
+     rustc --version
+     ```
+
+3. **Manter o Rust atualizado**:
+   - Utilize:
+     ```bash
+     rustup update
+     ```
 
 ---
 
 ### Comandos úteis
 
-- **Verificar instalação do Rust**:
+- Verificar a instalação do Rust:
   ```bash
   rustc --version
   ```
-- **Atualizar Rust**:
+- Atualizar o Rust:
   ```bash
   rustup update
   ```
-- **Desinstalar Rust**:
+- Desinstalar o Rust:
   ```bash
   rustup self uninstall
   ```
 
 ---
 
-Com o Rust instalado, você poderá compilar programas Rust e usar o gerenciador de pacotes `cargo`, que vem junto com o `rustup`.
+## Criando o primeiro "Hello World"
 
-# Criando nosso primeiro hello world
+Nesta seção, criaremos dois programas _Hello World_: um utilizando diretamente o `rustc` e outro com o `cargo`.
 
-Esta primeira aula iremos criar dois hello Worlds distintos, um utilizando o rustc e outro iremos utilizar o cargo para criar o projeto.
+### Criando o projeto manualmente
 
-Para usuários do windows utilize o powershell, para ter uma maior consistencia de comandos.
+1. **Criar um diretório para o projeto**:
 
-Primeiramente criaremos um diretetório que receberá nosso primeiro hello world, para isso abriremos nosso terminal, e utilizaremos o comando mkdir, para criar o primeiro diretório.
+   - No terminal, crie o diretório `hello_world` com:
+     ```bash
+     mkdir hello_world
+     ```
+   - Acesse o diretório:
+     ```bash
+     cd hello_world
+     ```
 
-```bash
-mkdir hello_world
-```
+2. **Criar o arquivo de código**:
 
-Então dentro do diretório criaremos um arquivo chamado `main.rs`, `.rs` é a extensão padrão de arquivos rust. Para isso primeiro iremos entrar em nosso diretório e depois criatr o arquivo. Veja a seguir o comando para isso:
+   - Crie um arquivo chamado `main.rs`:
+     ```bash
+     touch main.rs
+     ```
 
-```bash
-cd hello_world && touch main.rs
-```
+3. **Escrever o código**:
 
-Após isso podemos então abrir o projeto no VSCode com o comando `code .`, ao abrir o projeto nos depararemos com um arquivo main.rs. Neste arquivo então iremos declarar a função de entrada de nosso código que é a seguinte:
+   - Abra o arquivo `main.rs` no editor de texto, como o Visual Studio Code, usando:
+     ```bash
+     code .
+     ```
+   - Insira o seguinte código no arquivo:
+     ```rust
+     fn main() {
+         println!("Hello, world!");
+     }
+     ```
+
+4. **Compilar e executar o programa**:
+   - Para compilar o código, utilize o `rustc`:
+     ```bash
+     rustc main.rs
+     ```
+   - Isso gerará um executável. Execute-o com:
+     ```bash
+     ./main
+     ```
+
+---
+
+### Explicação do código
+
+#### Linha 1: Definição da função `main`
 
 ```rust
 fn main() {
-    println!("Hello world!");
-}
 ```
 
-Vamos destrinchar passo a passo o que é cada elemento desta função :
+- **`fn`**: Define uma função.
+- **`main`**: Ponto de entrada do programa.
+- **`()`**: Indica que a função não recebe parâmetros.
+- **`{`**: Início do bloco de código.
 
-### Linha 1: Definição da Função `main`
+#### Linha 2: Impressão no console
 
 ```rust
-fn main() {
+    println!("Hello, world!");
 ```
 
-1. **`fn`**: Esta palavra-chave indica a definição de uma função em Rust. Todas as funções em Rust começam com `fn`.
+- **`println!`**: Macro que imprime texto no console, adicionando uma nova linha.
+- **`"Hello, world!"`**: String a ser exibida.
 
-2. **`main`**: Este é o nome da função. No caso de uma aplicação em Rust, o ponto de entrada obrigatório para execução é uma função chamada `main`. Quando o programa é executado, ele começa a rodar a partir dessa função.
-
-3. **`()`**: Os parênteses depois de `main` indicam que essa função não recebe nenhum parâmetro. Em Rust, todas as funções precisam dos parênteses, mesmo que estejam vazios.
-
-4. **`{`**: A chave de abertura `{` marca o início do bloco de código da função. Todo o código que compõe a função `main` estará entre `{` e `}`.
-
----
-
-### Linha 2: Comando `println!`
-
-```rust
-    println!("Hello world!");
-```
-
-1. **`println!`**: `println!` é uma _macro_ em Rust. Macros são identificadas pelo `!` no final do nome. A macro `println!` imprime texto no console e adiciona uma nova linha automaticamente no final.
-
-2. **`("Hello world!")`**: Os parênteses contêm o argumento passado para a macro `println!`. Neste caso, o argumento é a string `"Hello world!"`, que será exibida no console.
-
-3. **`"Hello world!"`**: Esta é uma string literal, um tipo de dado que representa texto entre aspas duplas (`"`). Este texto será exatamente o que a função imprime no console.
-
-4. **`;`**: O ponto e vírgula (`;`) termina a instrução em Rust. Cada linha de comando dentro da função geralmente precisa de um ponto e vírgula para indicar o final da instrução.
-
----
-
-### Linha 3: Fechando a Função `main`
+#### Linha 3: Encerramento da função
 
 ```rust
 }
 ```
 
-1. **`}`**: A chave de fechamento (`}`) encerra o bloco de código da função `main`. É onde Rust entende que o código da função termina.
+- **`}`**: Marca o fim do bloco de código.
 
 ---
 
-Essa função `main` é simples e executa apenas uma tarefa: imprime `"Hello world!"` no console quando o programa é executado.
+Com isso, você já criou e executou seu primeiro programa em Rust! Na próxima etapa, exploraremos o uso do `cargo` para gerenciar projetos Rust de forma mais eficiente. [Para isso continue aprendendo, clique Aqui!](./hello_cargo.md)
