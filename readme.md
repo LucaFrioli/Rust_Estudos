@@ -41,6 +41,7 @@ Caso queira simplesmente adicionar as configurações no json de seu editor bast
 
 - **Code Runner** do criador _Jun Han_
 - **Material Icon Theme** do criador _Philipp Kief_
+- **CodeLLDB** do criador _Vadim Chugunov_
 
 ---
 
@@ -53,3 +54,7 @@ Vamos abordar os seguintes módulos dentro deste curso (**Recomenda-se a ordem d
 - **[Utilizando Structs](#)**
 - **...**
 
+## Porjetos práticos e progressivos
+
+- **[Projeto de cruzamento Automático](./practical_projects/simulation_of_cars_at_street_intersection/readme.md)**(Toatalmente baseado no curso ministrado pelo _Prof. Rômulo Silveira de Oliveira_);
+- **[Gestor de fichas de RPG](./practical_projects/rpg_sheet_manager/readme.md)**

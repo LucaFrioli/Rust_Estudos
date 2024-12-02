@@ -142,3 +142,5 @@ Hello, Cargo!
 ```
 
 Assim, o `cargo run` combina eficiência e simplicidade, sendo ideal para o ciclo de desenvolvimento.
+
+Agora que entendemos um pouco mais como criamos, e compilamos projetos Rust estamos aptos a continuar nossa jornada, para isso [clique aqui! COntinue aprendendo!](./Aula_02/readme.md)

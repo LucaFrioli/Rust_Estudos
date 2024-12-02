@@ -1,5 +1,10 @@
 # Conceitos básicos de Programação e Da Linguagem Rust
 
+**[Voltar](./../readme.md)**
+
+- [Sobre a linguagem](#histórico-e-vantagens-da-linguagem-rust)
+- [Aulas do módulo](#aulas-e-conteúdos)
+
 ## Histórico e vantagens da linguagem Rust
 
 Rust é uma linguagem de programação de propósito geral criada para ser rápida, segura e eficiente em termos de uso de recursos, competindo diretamente com C e C++ em ambientes de baixo nível e alta performance. Desenvolvida pela Mozilla e atualmente mantida pela comunidade, Rust foi projetada para fornecer abstrações de alto nível e desempenho próximo ao de C/C++ sem sacrificar a segurança de memória e a ausência de erros de concorrência.
