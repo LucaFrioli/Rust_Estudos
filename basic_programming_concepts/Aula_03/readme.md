@@ -299,8 +299,8 @@ Rust suporta dois tipos de pontos flutuantes:
 |---------------------|-------------------------------|-------------------------------|  
 | Precisão            | ~7 dígitos significativos     | ~15 dígitos significativos    |  
 | Consumo de Memória  | 32 bits                       | 64 bits                       |  
-| Faixa de Valores    | \( \pm 10^{38} \)            | \( \pm 10^{308} \)           |  
-| Uso Comum           | Gráficos, jogos              | Física, finanças, ciência     |  
+| Faixa de Valores    | \( \pm 10^{38} \)             | \( \pm 10^{308} \)            |  
+| Uso Comum           | Gráficos, jogos               | Física, finanças, ciência      |  
 
 ---
 
