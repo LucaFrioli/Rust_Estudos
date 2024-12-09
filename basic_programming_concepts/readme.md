@@ -19,3 +19,4 @@ Vale ressaltar que Rust não é uma linguagem orientada a objetos, porém ainda 
 
 - [Aula_01: Instalação da linguagem, e nosso primeiro **_olá mundo_**](./Aula_01/readme.md)
 - [Aula_02: Sobre variáveis e mutabilidade](./Aula_02/readme.md)
+- [Aula_03: Tipos Primitivos: Tipos escalares](./Aula_03/readme.md)

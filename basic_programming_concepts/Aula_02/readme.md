@@ -682,3 +682,6 @@ Compreender as **diferenças entre mutabilidade e shadowing**, por exemplo, ajud
 Rust também incentiva **boas práticas**, como preferir a imutabilidade sempre que possível, limitar escopos para maior previsibilidade e usar constantes para definir valores fixos avaliados em tempo de compilação. Ferramentas como o Clippy tornam mais fácil identificar pontos de melhoria no código, promovendo um aprendizado contínuo e melhores padrões de desenvolvimento.
 
 No final das contas, Rust é uma linguagem projetada para criar código que "simplesmente funciona", desde aplicações embarcadas até sistemas de alta performance. Para programadores de todos os níveis, dominar seus fundamentos não é apenas uma questão de aprender uma linguagem, mas de adotar uma nova mentalidade: **código seguro, eficiente e sustentável, desde o primeiro caractere até a última linha.**
+
+
+Agora que compreendemos melhor como declarar variaveis e constantes, como sombrea-las, e qual o seu comportamento dentro de escopos, temos uma maior base para a criação de aplicções seguras. Agora estamos prontos para dar [o próximo passo, clique aqui e continue sua leitura](../Aula_03/readme.md)
