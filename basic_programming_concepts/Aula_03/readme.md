@@ -3,7 +3,7 @@
 Rust é uma linguagem fortemente tipada. Por esse motivo, é fundamental compreender os seus tipos primitivos. Neste primeiro momento, focaremos no subgrupo dos tipos escalares e em como utilizá-los de maneira eficiente. Além disso, exploraremos as diferenças técnicas entre esses tipos e analisaremos como a escolha adequada da tipagem pode impactar diretamente a capacidade do software desenvolvido, bem como sua performance.
 
 ---
-## Summário
+## Sumário
 
 - [Entendendo o que são tipos escalares.](#entendendo-o-que-são-tipos-escalares)
 
@@ -21,6 +21,8 @@ Rust é uma linguagem fortemente tipada. Por esse motivo, é fundamental compree
     - [O que é um caractere;](#o-que-é-um-caractere)
     - [O que são os padrões UTF8;](#o-que-são-os-padrões-utf-8)
     - [Natureza do tipo caractere em Rust;](#natureza-do-tipo-caractere-em-rust)
+
+- [Bibliografia](#bibliografia)
 
 ---
 
@@ -56,11 +58,11 @@ Muitas vezes, os **tipos escalares** são chamados erroneamente de **tipos primi
    Exclusivamente usados para representar valores unitários. Eles não têm subdivisões ou agrupamentos internos, ao contrário dos tipos compostos.
  
 
-| Característica            | Tipos Escalares                   | Tipos Primitivos                |  
-|---------------------------|------------------------------------|----------------------------------|  
-| Unidade de Valor          | Um único valor indivisível        | Pode conter múltiplos valores   |  
+| Característica            | Tipos Escalares                                  | Tipos Primitivos                |  
+|---------------------------|--------------------------------------------------|---------------------------------|  
+| Unidade de Valor          | Um único valor indivisível                       | Pode conter múltiplos valores   |  
 | Exemplos                  | Inteiros, ponto flutuante, booleanos, caracteres | Arrays, tuplas, tipos escalares |  
-| Estrutura Interna         | Ausente                          | Presente (em tipos compostos)   |  
+| Estrutura Interna         | Ausente                                          | Presente (em tipos compostos)   |  
 
 ---
 
@@ -300,7 +302,7 @@ Rust suporta dois tipos de pontos flutuantes:
 | Precisão            | ~7 dígitos significativos     | ~15 dígitos significativos    |  
 | Consumo de Memória  | 32 bits                       | 64 bits                       |  
 | Faixa de Valores    | \( \pm 10^{38} \)             | \( \pm 10^{308} \)            |  
-| Uso Comum           | Gráficos, jogos               | Física, finanças, ciência      |  
+| Uso Comum           | Gráficos, jogos               | Física, finanças, ciência     |  
 
 ---
 
@@ -892,3 +894,34 @@ fn main() {
 - A natureza do tipo `char` em Rust, com 4 bytes de largura, o torna poderoso para trabalhar com caracteres Unicode de forma eficiente e precisa.  
 
 Com essa base, você pode manipular caracteres em Rust com segurança e aproveitar o suporte completo ao Unicode para criar aplicativos internacionais e robustos.
+
+---
+
+Após entendermos melhor esses conceitos fundamentais da linguagem Rust, podemos explorar os diversos métodos padrão disponíveis nos tipos escalares, que fazem parte da biblioteca padrão (*standard library*) da linguagem. Para acessar a documentação completa da biblioteca padrão, você pode [clicar aqui](https://doc.rust-lang.org/stable/std/index.html). Além disso, recomendamos revisar as implementações básicas comentadas disponíveis na aula, que fornecem exemplos práticos e esclarecedores. Caso deseje visualizar algumas tabelas, basta executar os exemplos fornecidos, que ilustram as operações e funcionalidades discutidas.
+
+Além dos tipos escalares básicos, Rust também oferece tipos primitivos compostos, como *Tuples* e *Arrays*. Abordaremos essa temática na [próxima aula. Clique aqui para continuar seus estudos e explorar mais sobre esses conceitos](./../Aula_04/readme.md). 
+
+---
+
+# Bibliografia
+
+
+- [Curso ministrado pelo Prof. Rômulo Silva de Oliveira](https://www.udemy.com/share/10aqpY3@bVJOeg1cn2IOx8kUaGicVb6pZ6Ni_e0QpYg5OuoXpiJ9zz5F0ejLJ8Xm7AgyDPf_mw==/)
+- [The Rust Programming Language: 3.2 Data Types](https://doc.rust-lang.org/book/ch03-02-data-types.html)
+- [Doc Rust-lang: THe Rust Standard Library](https://doc.rust-lang.org/stable/std/index.html)
+    - [Primitive Type i8](https://doc.rust-lang.org/stable/std/primitive.i8.html)
+    - [Primitive Type u8](https://doc.rust-lang.org/stable/std/primitive.u8.html)
+    - [Primitive Type i16](https://doc.rust-lang.org/stable/std/primitive.i16.html)
+    - [Primitive Type u16](https://doc.rust-lang.org/stable/std/primitive.u16.html)
+    - [Primitive Type i32](https://doc.rust-lang.org/stable/std/primitive.i32.html)
+    - [Primitive Type u32](https://doc.rust-lang.org/stable/std/primitive.u32.html)
+    - [Primitive Type i64](https://doc.rust-lang.org/stable/std/primitive.i64.html)
+    - [Primitive Type u64](https://doc.rust-lang.org/stable/std/primitive.u64.html)
+    - [Primitive Type i128](https://doc.rust-lang.org/stable/std/primitive.i128.html)
+    - [Primitive Type u128](https://doc.rust-lang.org/stable/std/primitive.u128.html)
+    - [Primitive Type isize](https://doc.rust-lang.org/stable/std/primitive.isize.html)
+    - [Primitive Type usize](https://doc.rust-lang.org/stable/std/primitive.usize.html)
+    - [Primitive Type f32](https://doc.rust-lang.org/stable/std/primitive.f32.html)
+    - [Primitive Type f64](https://doc.rust-lang.org/stable/std/primitive.f64.html)
+    - [Primitive Type bool](https://doc.rust-lang.org/stable/std/primitive.bool.html)
+    - [Primitive Type char](https://doc.rust-lang.org/stable/std/primitive.char.html)

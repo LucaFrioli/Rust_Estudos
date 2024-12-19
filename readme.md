@@ -28,7 +28,7 @@ _OBS: as configurações recomendadas serão aplicaveis ao VS Code, caso utilize
 - Auto Save ativo;
 - Word Wrap ativo;
 
-Caso queira simplesmente adicionar as configurações no json de seu editor basta abri- e adicionar as seguintes configurações:
+Caso queira simplesmente adicionar as configurações no json de seu editor basta abri-lo e adicionar as seguintes configurações:
 
 ```json
 {
@@ -42,6 +42,7 @@ Caso queira simplesmente adicionar as configurações no json de seu editor bast
 - **Code Runner** do criador _Jun Han_
 - **Material Icon Theme** do criador _Philipp Kief_
 - **CodeLLDB** do criador _Vadim Chugunov_
+- **rust-analyzer** por _rust-lang.org_ (oficial da linguagem)
 
 ---
 
