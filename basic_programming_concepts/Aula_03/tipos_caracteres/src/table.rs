@@ -32,6 +32,8 @@ macro_rules! resumo_tabela {
 pub fn display_table() {
     const TABLE_WIDTH: usize = 160;
     separator!(TABLE_WIDTH+7);
+    println!("|{:^width$}|","Tabela referente a caracteres básicos da lingua portuguesa", width= TABLE_WIDTH+7);
+    separator!(TABLE_WIDTH+7);
     println!("| {:^width$} | {:^width$} | {:^width$} |", "Caractere", "Unicode", "Descrição", width = TABLE_WIDTH / 3);
     separator!(TABLE_WIDTH+7);
 
